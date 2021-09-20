@@ -1,0 +1,683 @@
+      improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> db
+test
+> use movie
+switched to db movie
+> db
+movie
+> db.users.insert({first_name:"anup"})
+WriteResult({ "nInserted" : 1 })
+>
+> db.users.find().pretty()
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee79"),
+        "id" : 1,
+        "movie_name" : "Cuenca Crime, The (Crimen de Cuenca, El)",
+        "movie_genre" : "Drama",
+        "production_year" : 2003,
+        "budget" : 14212
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee7a"),
+        "id" : 2,
+        "movie_name" : "Gozu (Gokudô kyôfu dai-gekijô: Gozu)",
+        "movie_genre" : "Comedy|Crime|Drama|Horror|Mystery",
+        "production_year" : 2008,
+        "budget" : 13252
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee7b"),
+        "id" : 3,
+        "movie_name" : "Beekeeper, The (O melissokomos)",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "budget" : 18604
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee7c"),
+        "id" : 4,
+        "movie_name" : "The Happy Road",
+        "movie_genre" : "Comedy",
+        "production_year" : 2006,
+        "budget" : 17650
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee7d"),
+        "id" : 5,
+        "movie_name" : "Green Chair (Noksaek uija)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1999,
+        "budget" : 9553
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee7e"),
+        "id" : 6,
+        "movie_name" : "Midsummer Night's Dream, A",
+        "movie_genre" : "Comedy|Fantasy|Romance",
+        "production_year" : 2017,
+        "budget" : 13720
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee7f"),
+        "id" : 7,
+        "movie_name" : "Drishyam",
+        "movie_genre" : "Children|Drama|Thriller",
+        "production_year" : 1992,
+        "budget" : 11222
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee80"),
+        "id" : 8,
+        "movie_name" : "Man in the Middle",
+        "movie_genre" : "Drama|War",
+        "production_year" : 2014,
+        "budget" : 17717
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee81"),
+        "id" : 9,
+        "movie_name" : "Harum Scarum",
+        "movie_genre" : "Comedy|Musical",
+        "production_year" : 2014,
+        "budget" : 11528
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee82"),
+        "id" : 10,
+        "movie_name" : "Lightning in a Bottle",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 15152
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee83"),
+        "id" : 11,
+        "movie_name" : "Dance of Reality, The (Danza de la realidad, La)",
+        "movie_genre" : "Drama|Fantasy",
+        "production_year" : 2020,
+        "budget" : 14222
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee84"),
+        "id" : 12,
+        "movie_name" : "Palermo Shooting",
+        "movie_genre" : "Drama",
+        "production_year" : 2006,
+        "budget" : 16345
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee85"),
+        "id" : 13,
+        "movie_name" : "Castle Freak",
+        "movie_genre" : "Horror",
+        "production_year" : 2014,
+        "budget" : 18558
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee86"),
+        "id" : 14,
+        "movie_name" : "Yumurta (Egg)",
+        "movie_genre" : "Drama",
+        "production_year" : 2013,
+        "budget" : 15297
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee87"),
+        "id" : 15,
+        "movie_name" : "April Love",
+        "movie_genre" : "Comedy|Drama|Musical",
+        "production_year" : 2016,
+        "budget" : 10238
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee88"),
+        "id" : 16,
+        "movie_name" : "Wild Gals Of The Naked West",
+        "movie_genre" : "Comedy|Western",
+        "production_year" : 1995,
+        "budget" : 11367
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee89"),
+        "id" : 17,
+        "movie_name" : "Kid Cannabis",
+        "movie_genre" : "Drama",
+        "production_year" : 2001,
+        "budget" : 19445
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee8a"),
+        "id" : 18,
+        "movie_name" : "Red Eye",
+        "movie_genre" : "Horror|Thriller",
+        "production_year" : 1999,
+        "budget" : 18861
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee8b"),
+        "id" : 19,
+        "movie_name" : "Pit, The",
+        "movie_genre" : "Horror",
+        "production_year" : 2002,
+        "budget" : 11373
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee8c"),
+        "id" : 20,
+        "movie_name" : "Where the Trail Ends",
+        "movie_genre" : "Adventure|Documentary|Drama",
+        "production_year" : 1999,
+        "budget" : 17096
+}
+Type "it" for more
+> db.users.find({movie_name:"Red Eye"}).pretty()
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee8a"),
+        "id" : 18,
+        "movie_name" : "Red Eye",
+        "movie_genre" : "Horror|Thriller",
+        "production_year" : 1999,
+        "budget" : 18861
+}
+> db.users.find({$ne: {movie_name:"Red Eye"}}).pretty()
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "unknown top level operator: $ne. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.",
+        "code" : 2,
+        "codeName" : "BadValue"
+}
+>
+>
+> db.users.find({movie_name:{$ne:"Red Eye"}}).pretty()
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee79"),
+        "id" : 1,
+        "movie_name" : "Cuenca Crime, The (Crimen de Cuenca, El)",
+        "movie_genre" : "Drama",
+        "production_year" : 2003,
+        "budget" : 14212
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee7a"),
+        "id" : 2,
+        "movie_name" : "Gozu (Gokudô kyôfu dai-gekijô: Gozu)",
+        "movie_genre" : "Comedy|Crime|Drama|Horror|Mystery",
+        "production_year" : 2008,
+        "budget" : 13252
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee7b"),
+        "id" : 3,
+        "movie_name" : "Beekeeper, The (O melissokomos)",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "budget" : 18604
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee7c"),
+        "id" : 4,
+        "movie_name" : "The Happy Road",
+        "movie_genre" : "Comedy",
+        "production_year" : 2006,
+        "budget" : 17650
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee7d"),
+        "id" : 5,
+        "movie_name" : "Green Chair (Noksaek uija)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1999,
+        "budget" : 9553
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee7e"),
+        "id" : 6,
+        "movie_name" : "Midsummer Night's Dream, A",
+        "movie_genre" : "Comedy|Fantasy|Romance",
+        "production_year" : 2017,
+        "budget" : 13720
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee7f"),
+        "id" : 7,
+        "movie_name" : "Drishyam",
+        "movie_genre" : "Children|Drama|Thriller",
+        "production_year" : 1992,
+        "budget" : 11222
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee80"),
+        "id" : 8,
+        "movie_name" : "Man in the Middle",
+        "movie_genre" : "Drama|War",
+        "production_year" : 2014,
+        "budget" : 17717
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee81"),
+        "id" : 9,
+        "movie_name" : "Harum Scarum",
+        "movie_genre" : "Comedy|Musical",
+        "production_year" : 2014,
+        "budget" : 11528
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee82"),
+        "id" : 10,
+        "movie_name" : "Lightning in a Bottle",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 15152
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee83"),
+        "id" : 11,
+        "movie_name" : "Dance of Reality, The (Danza de la realidad, La)",
+        "movie_genre" : "Drama|Fantasy",
+        "production_year" : 2020,
+        "budget" : 14222
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee84"),
+        "id" : 12,
+        "movie_name" : "Palermo Shooting",
+        "movie_genre" : "Drama",
+        "production_year" : 2006,
+        "budget" : 16345
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee85"),
+        "id" : 13,
+        "movie_name" : "Castle Freak",
+        "movie_genre" : "Horror",
+        "production_year" : 2014,
+        "budget" : 18558
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee86"),
+        "id" : 14,
+        "movie_name" : "Yumurta (Egg)",
+        "movie_genre" : "Drama",
+        "production_year" : 2013,
+        "budget" : 15297
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee87"),
+        "id" : 15,
+        "movie_name" : "April Love",
+        "movie_genre" : "Comedy|Drama|Musical",
+        "production_year" : 2016,
+        "budget" : 10238
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee88"),
+        "id" : 16,
+        "movie_name" : "Wild Gals Of The Naked West",
+        "movie_genre" : "Comedy|Western",
+        "production_year" : 1995,
+        "budget" : 11367
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee89"),
+        "id" : 17,
+        "movie_name" : "Kid Cannabis",
+        "movie_genre" : "Drama",
+        "production_year" : 2001,
+        "budget" : 19445
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee8b"),
+        "id" : 19,
+        "movie_name" : "Pit, The",
+        "movie_genre" : "Horror",
+        "production_year" : 2002,
+        "budget" : 11373
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee8c"),
+        "id" : 20,
+        "movie_name" : "Where the Trail Ends",
+        "movie_genre" : "Adventure|Documentary|Drama",
+        "production_year" : 1999,
+        "budget" : 17096
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee8d"),
+        "id" : 21,
+        "movie_name" : "Fear and Trembling (Stupeur et tremblements)",
+        "movie_genre" : "Comedy",
+        "production_year" : 1997,
+        "budget" : 9885
+}
+Type "it" for more
+> db.users.find({budget:{$gte:9000}}).pretty()
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee79"),
+        "id" : 1,
+        "movie_name" : "Cuenca Crime, The (Crimen de Cuenca, El)",
+        "movie_genre" : "Drama",
+        "production_year" : 2003,
+        "budget" : 14212
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee7a"),
+        "id" : 2,
+        "movie_name" : "Gozu (Gokudô kyôfu dai-gekijô: Gozu)",
+        "movie_genre" : "Comedy|Crime|Drama|Horror|Mystery",
+        "production_year" : 2008,
+        "budget" : 13252
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee7b"),
+        "id" : 3,
+        "movie_name" : "Beekeeper, The (O melissokomos)",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "budget" : 18604
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee7c"),
+        "id" : 4,
+        "movie_name" : "The Happy Road",
+        "movie_genre" : "Comedy",
+        "production_year" : 2006,
+        "budget" : 17650
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee7d"),
+        "id" : 5,
+        "movie_name" : "Green Chair (Noksaek uija)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1999,
+        "budget" : 9553
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee7e"),
+        "id" : 6,
+        "movie_name" : "Midsummer Night's Dream, A",
+        "movie_genre" : "Comedy|Fantasy|Romance",
+        "production_year" : 2017,
+        "budget" : 13720
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee7f"),
+        "id" : 7,
+        "movie_name" : "Drishyam",
+        "movie_genre" : "Children|Drama|Thriller",
+        "production_year" : 1992,
+        "budget" : 11222
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee80"),
+        "id" : 8,
+        "movie_name" : "Man in the Middle",
+        "movie_genre" : "Drama|War",
+        "production_year" : 2014,
+        "budget" : 17717
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee81"),
+        "id" : 9,
+        "movie_name" : "Harum Scarum",
+        "movie_genre" : "Comedy|Musical",
+        "production_year" : 2014,
+        "budget" : 11528
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee82"),
+        "id" : 10,
+        "movie_name" : "Lightning in a Bottle",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 15152
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee83"),
+        "id" : 11,
+        "movie_name" : "Dance of Reality, The (Danza de la realidad, La)",
+        "movie_genre" : "Drama|Fantasy",
+        "production_year" : 2020,
+        "budget" : 14222
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee84"),
+        "id" : 12,
+        "movie_name" : "Palermo Shooting",
+        "movie_genre" : "Drama",
+        "production_year" : 2006,
+        "budget" : 16345
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee85"),
+        "id" : 13,
+        "movie_name" : "Castle Freak",
+        "movie_genre" : "Horror",
+        "production_year" : 2014,
+        "budget" : 18558
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee86"),
+        "id" : 14,
+        "movie_name" : "Yumurta (Egg)",
+        "movie_genre" : "Drama",
+        "production_year" : 2013,
+        "budget" : 15297
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee87"),
+        "id" : 15,
+        "movie_name" : "April Love",
+        "movie_genre" : "Comedy|Drama|Musical",
+        "production_year" : 2016,
+        "budget" : 10238
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee88"),
+        "id" : 16,
+        "movie_name" : "Wild Gals Of The Naked West",
+        "movie_genre" : "Comedy|Western",
+        "production_year" : 1995,
+        "budget" : 11367
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee89"),
+        "id" : 17,
+        "movie_name" : "Kid Cannabis",
+        "movie_genre" : "Drama",
+        "production_year" : 2001,
+        "budget" : 19445
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee8a"),
+        "id" : 18,
+        "movie_name" : "Red Eye",
+        "movie_genre" : "Horror|Thriller",
+        "production_year" : 1999,
+        "budget" : 18861
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee8b"),
+        "id" : 19,
+        "movie_name" : "Pit, The",
+        "movie_genre" : "Horror",
+        "production_year" : 2002,
+        "budget" : 11373
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee8c"),
+        "id" : 20,
+        "movie_name" : "Where the Trail Ends",
+        "movie_genre" : "Adventure|Documentary|Drama",
+        "production_year" : 1999,
+        "budget" : 17096
+}
+Type "it" for more
+> db.users.find({budget:{$lte:9000}}).pretty()
+> db.users.find({budget:{$lte:10000}}).pretty()
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee7d"),
+        "id" : 5,
+        "movie_name" : "Green Chair (Noksaek uija)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1999,
+        "budget" : 9553
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ee8d"),
+        "id" : 21,
+        "movie_name" : "Fear and Trembling (Stupeur et tremblements)",
+        "movie_genre" : "Comedy",
+        "production_year" : 1997,
+        "budget" : 9885
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76eea5"),
+        "id" : 45,
+        "movie_name" : "Ice Poison",
+        "movie_genre" : "(no genres listed)",
+        "production_year" : 2007,
+        "budget" : 9021
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76eead"),
+        "id" : 53,
+        "movie_name" : "Werewolf Boy, A (Neuk-dae-so-nyeon)",
+        "movie_genre" : "Drama|Fantasy|Romance",
+        "production_year" : 2000,
+        "budget" : 9920
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76eec1"),
+        "id" : 73,
+        "movie_name" : "Prom Night in Mississippi",
+        "movie_genre" : "Documentary",
+        "production_year" : 2017,
+        "budget" : 9725
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76eec9"),
+        "id" : 81,
+        "movie_name" : "You Can't Take It with You",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2018,
+        "budget" : 9462
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76eecf"),
+        "id" : 87,
+        "movie_name" : "Carmen Jones",
+        "movie_genre" : "Drama|Musical",
+        "production_year" : 2016,
+        "budget" : 9080
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76eed3"),
+        "id" : 91,
+        "movie_name" : "When a Stranger Calls",
+        "movie_genre" : "Horror|Thriller",
+        "production_year" : 2008,
+        "budget" : 9328
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76eedc"),
+        "id" : 100,
+        "movie_name" : "After Last Season",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 2012,
+        "budget" : 9013
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76eee4"),
+        "id" : 108,
+        "movie_name" : "Frisco Jenny",
+        "movie_genre" : "Drama",
+        "production_year" : 1991,
+        "budget" : 9606
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76eef9"),
+        "id" : 129,
+        "movie_name" : "Cat in Paris, A (Une vie de chat)",
+        "movie_genre" : "Animation|Crime|Mystery",
+        "production_year" : 2014,
+        "budget" : 9015
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76eefb"),
+        "id" : 131,
+        "movie_name" : "Venus & Fleur",
+        "movie_genre" : "(no genres listed)",
+        "production_year" : 2006,
+        "budget" : 9009
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ef0d"),
+        "id" : 149,
+        "movie_name" : "Guadalcanal Diary",
+        "movie_genre" : "Action|War",
+        "production_year" : 2008,
+        "budget" : 9163
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ef24"),
+        "id" : 172,
+        "movie_name" : "Holocaust",
+        "movie_genre" : "Drama|Romance|War",
+        "production_year" : 2015,
+        "budget" : 9960
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ef2c"),
+        "id" : 180,
+        "movie_name" : "Shakthi: The Power",
+        "movie_genre" : "Action|Drama",
+        "production_year" : 1999,
+        "budget" : 9041
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ef4b"),
+        "id" : 211,
+        "movie_name" : "Bambou",
+        "movie_genre" : "Comedy",
+        "production_year" : 1991,
+        "budget" : 9340
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ef58"),
+        "id" : 224,
+        "movie_name" : "No Man's Land",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2006,
+        "budget" : 9212
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ef64"),
+        "id" : 236,
+        "movie_name" : "Adult Camp",
+        "movie_genre" : "Comedy",
+        "production_year" : 1991,
+        "budget" : 9659
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ef82"),
+        "id" : 266,
+        "movie_name" : "Life Is a Long Quiet River (La vie est un long fleuve tranquille)",
+        "movie_genre" : "Comedy",
+        "production_year" : 2020,
+        "budget" : 9019
+}
+{
+        "_id" : ObjectId("6148bc1b11ee455d8d76ef83"),
+        "id" : 267,
+        "movie_name" : "Hero and the Terror",
+        "movie_genre" : "Action|Crime",
+        "production_year" : 2003,
+        "budget" : 9859
+}
+Type "it" for more
+>
+>
